@@ -13,7 +13,7 @@ anyway run `bundle install`.
 
 ## 1. Strings, more.
 
-# Part A — Palindromes:
+### Part A — Palindromes:
 
 A palindrome is a word or phrase that reads the same forwards as
 backwards, ignoring case, punctuation, and nonword characters. (A
@@ -31,7 +31,7 @@ Palindrome.palindrome?("adam")        # => should return false or nil
 What may help: `String#gsub`, `String#reverse`, `String#downcase`. Check
 it out on [ruby-doc.org](http://ruby-doc.org/).
 
-# Part B — Word Count:
+### Part B — Word Count:
 
 Define a function `count` in module `Words` that, given an input string,
 return a hash whose keys are words in the string and whose values are
@@ -49,7 +49,7 @@ What may help: `String#gsub`, `String#split`, `String#downcase`,
 `Enumerable#group_by`. Check it out on [ruby-doc.org](http://ruby-doc.org/).
 
 
-## Part C — Anagrams: (DIFFICULT)
+### Part C — Anagrams: (DIFFICULT)
 
 An anagram group is a group of words such that any one can be converted
 into any other just by rearranging the letters. For example, "rats",
@@ -66,7 +66,7 @@ anagrams("rats What star thaw Tars") # => should return [["rats", "star", "Tars"
                                      #    arrays or item in arrays may come in any order
 ```
 
-## 2. Rock Paper Scissors
+## 2. Rock Paper Scissors (NO TESTS AND FILES YET)
 
 In a game of rock-paper-scissors, each player chooses to play Rock (R),
 Paper (P), or Scissors (S). The rules are: Rock breaks Scissors,
@@ -79,7 +79,7 @@ encoded as an array of two elements
 [ ["Joker", "P"], ["Batman", "S"] ] # Batman would win since S > P
 ```
 
-## Part A. Game Winner:
+### Part A. Game Winner:
 
 Create a `RockPaperScissors` class with a class method winner that takes
 two 2-element arrays like those above, and returns the one representing
@@ -97,7 +97,7 @@ message: "Strategy must be one of R,P,S".
 If both players use the same strategy, the first player is the winner.
 
 
-## Part B. Tournament (DIFFICULT):
+### Part B. Tournament (DIFFICULT):
 
 A rock-paper-scissors tournament is encoded as an array of games - that
 is, each element can be considered its own tournament.
@@ -133,7 +133,7 @@ participates in exactly one match per round).
 HINT: Formulate the problem as a recursive one whose base case you
 solved in part 1.
 
-## 3. Metaprogramming
+## 3. Metaprogramming (NO TESTS AND FILES YET)
 
 We saw how attr_accessor uses metaprogramming to create getters and
 setters for object attributes on the fly.
