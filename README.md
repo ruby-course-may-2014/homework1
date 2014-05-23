@@ -20,30 +20,34 @@ backwards, ignoring case, punctuation, and nonword characters. (A
 "nonword character" is defined for our purposes as "a character that
 Ruby regular expressions would treat as a nonword character".)
 
-You will write a method `palindrome?` that returns true if and only if
-its receiver is a palindrome.
+You will write a method `palindrome?` in module `Palindrome` that
+returns true if and only if its receiver is a palindrome.
 
 ```ruby
-palindrome?("redivider")   # => should return true
-palindrome?("adam")        # => should return false or nil
+Palindrome.palindrome?("redivider")   # => should return true
+Palindrome.palindrome?("adam")        # => should return false or nil
 ```
 
-What may help: `String#gsub`, `String#reverse`, `String#downcase`. Chech
+What may help: `String#gsub`, `String#reverse`, `String#downcase`. Check
 it out on [ruby-doc.org](http://ruby-doc.org/).
 
 # Part B — Word Count:
 
-Define a function count_words that, given an input string, return a hash
-whose keys are words in the string and whose values are the number of
-times each word appears:
+Define a function `count` in module `Words` that, given an input string,
+return a hash whose keys are words in the string and whose values are
+the number of times each word appears:
 
 ```ruby
-word_count("To be or not to be") # => {"to"=>2, "be"=>2, "or"=>1, "not"=>1}
+Words.count("To be or not to be") # => {"to"=>2, "be"=>2, "or"=>1, "not"=>1}
 ```
 
-Your solution shouldn't use for-loops, but iterators like each are
+Your solution shouldn't use for-loops, but iterators like `each` are
 permitted. As before, nonwords and case should be ignored. A word is
 defined as a string of characters between word boundaries.
+
+What may help: `String#gsub`, `String#split`, `String#downcase`,
+`Enumerable#group_by`. Check it out on [ruby-doc.org](http://ruby-doc.org/).
+
 
 ## Part C — Anagrams: (DIFFICULT)
 

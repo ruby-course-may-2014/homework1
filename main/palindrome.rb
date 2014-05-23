@@ -1,7 +1,7 @@
 module Palindrome
   extend self
 
-  def test?(str)
+  def palindrome?(str)
     false
   end
 end
