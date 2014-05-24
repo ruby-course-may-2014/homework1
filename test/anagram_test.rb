@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'main', 'anagram'))
 
-class TestPalindrome < MiniTest::Unit::TestCase
+class TestAnagram < MiniTest::Unit::TestCase
   include Anagram
 
   def test_empty_string

@@ -5,11 +5,11 @@ class TestPalindrome < MiniTest::Unit::TestCase
   include Palindrome
 
   def test_non_palindrome
-    assert palindrome?('adam'), 'adam should not be palindrome'
+    assert !palindrome?('adam'), 'adam should not be palindrome'
   end
 
   def test_palindrome
-    assert !palindrome?('redivider'), 'redivider should be palindrome'
+    assert palindrome?('redivider'), 'redivider should be palindrome'
   end
 
   def test_with_capitals
